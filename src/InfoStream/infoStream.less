@@ -1,0 +1,253 @@
+#J_infoStream {
+  margin: 0 auto;
+}
+
+.info-stream {
+  overflow: visible;
+
+  .el-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+    &.hide {
+      display: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &.hide {
+    display: none;
+  }
+}
+
+.info-stream-head {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  color: #fff;
+  background-color: #f7955e;
+  height: 80px;
+
+
+  .tab-nav {
+
+    li {
+      display: inline-block;
+      width: 140px;
+      font-size: 30px;
+      line-height: 80px;
+      cursor: pointer;
+      text-align: center;
+      transition: all .2s;
+
+      &.active {
+        background-color: #ed783b;
+      }
+    }
+  }
+}
+
+.info-stream-body {
+  position: relative;
+  overflow: hidden;
+  width: 78%;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .main-content,.el-content {
+    box-sizing: border-box;
+
+    &:active {
+      background: #fff7f0;
+    }
+  }
+
+  .main-content {
+    height: 120px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    .media-head {
+      float: left;
+      margin-right: 10px;
+      height: 100%;
+      width: 200px;
+    }
+
+    .media-body {
+      position: relative;
+      overflow: hidden;
+      height: 100px;
+
+      h3 {
+        line-height: 1.5em;
+      }
+
+      .assist {
+        position: absolute;
+        bottom: 0;
+        color: #bbb;
+        font-size: 14px;
+
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .el-content {
+    position: relative;
+    float: left;
+    width: 31.3333%;
+    height: 242px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid #ededed;
+    margin: 0 1% 1.8% 1%;
+    font-size: 12px;
+    padding-bottom: 5px;
+
+    &:active {
+      border-color: #fccd90;
+    }
+
+    .media-head {
+      display: block;
+      width: 100%;
+      height: 158px;
+      padding-bottom: 6px;
+    }
+
+    .title {
+      line-height: 16px;
+      max-height: 32px;
+      height: 32px;
+      overflow: hidden;
+      padding: 0 4px;
+      margin-bottom: 4px;
+    }
+
+    .now-money {
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 0 4px;
+    }
+
+    .back-money {
+      padding: 0 4px;
+
+      .diff {
+        color: #c33;
+        margin-right: 2px;
+      }
+
+      .text {
+        background: #c33;
+        border-radius: 3px;
+        color: #fff;
+        padding: 2px;
+      }
+    }
+
+    .rob {
+      position: absolute;
+      bottom: 9px;
+      right: -3px;
+      display: block;
+      background-color: #d91913;
+      color: #fff;
+      font-style: normal;
+      padding: 1px 4px;
+    }
+  }
+
+  .loading-wrapper {
+    margin-top: 10px;
+    line-height: 40px;
+    text-align: center;
+
+    .loading {
+      display: inline-block;
+      font-size: 0;
+      width: 64px;
+      height: 64px;
+      background: url(../img/loading.png) center no-repeat;
+      background-size: cover;
+      -webkit-animation: spin 2s infinite linear;
+    }
+  }
+
+  .top-ad, .smallimg-ad {
+    width: 100%;
+    clear: both;
+
+    &[data-activetype="shopping"] {
+      margin-bottom: 10px;
+    }
+  }
+
+  .top-ad {
+    margin-top: -10px;
+  }
+}
+
+.info-stream-side {
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  top: 80px;
+  right: 0;
+  z-index: 100;
+  width: 22%;
+  padding: 10px 1% 0 0;
+  box-sizing: border-box;
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .back-to-top {
+    height: 40px;
+    line-height: 40px;
+    background-color: #ef8133;
+    color: #fff;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+
+    &:active {
+      background-color: #e9611d;
+    }
+  }
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@media screen and (min-width : 910px) {
+  .info-stream-body .el-content .media-head {
+    height: 220px;
+  }
+
+  .info-stream-body .el-content {
+    height: 304px;
+  }
+}
