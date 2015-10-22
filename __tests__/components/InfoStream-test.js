@@ -45,7 +45,7 @@ describe('InfoStream', () => {
       "type": "beauty"
     }];
 
-    window.infostreamRightadData = {
+    window.infostreamRightadData = [{
       "id": "207595",
       "code": "m_info_stream_float_ad",
       "name": "信息流右侧悬浮广告",
@@ -60,7 +60,7 @@ describe('InfoStream', () => {
       "children": null,
       "attributes": null,
       "ck": "{&quot;id&quot;:&quot;207595&quot;,&quot;ck_name&quot;:&quot;信息流右侧悬浮广告&quot;,&quot;ck_po&quot;:&quot;&quot;,&quot;pg&quot;:&quot;UC123_PAD-UC123首页PAD-首页首部&quot;,&quot;ck_rg&quot;:&quot;信息流&quot;}"
-    };
+    }];
 
     
     let infoStream = TestUtils.renderIntoDocument(

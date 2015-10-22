@@ -32,7 +32,7 @@
       "react"
     ],
     "testPathDirs": [
-      "<rootDir>"
+      "<rootDir>/__tests__"
     ],
     "testFileExtensions": [
       "js",
